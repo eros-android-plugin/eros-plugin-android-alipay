@@ -25,10 +25,10 @@ android {
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:25.3.1'
-    testImplementation 'junit:junit:4.12'
-    implementation 'com.github.bmfe.eros-nexus:nexus:1.0.3'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'junit:junit:4.12'
+    compile project(':nexus')
     //支付宝依赖包
-    implementation files('libs/alipaySdk-20180403.jar')
+    compile files('libs/alipaySdk-20180403.jar')
 }
